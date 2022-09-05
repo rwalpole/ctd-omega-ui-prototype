@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">COAL 80</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header app-custom-class">CCR</th>
+      <th scope="col" class="govuk-table__header app-custom-class">Scope and Content</th>
+      <th scope="col" class="govuk-table__header app-custom-class">Covering Dates</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="#" class="govuk-link--no-visited-state">COAL 80/80/1</a></th>
+      <td class="govuk-table__cell">Bedlington Colliery, Newcastle Upon Tyne. Photograph depicting: view of pithead baths.</td>
+      <td class="govuk-table__cell">1960</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="#" class="govuk-link--no-visited-state">COAL 80/80/2</a></th>
+      <td class="govuk-table__cell">Bedlington Colliery, Newcastle Upon Tyne. Photograph depicting: view of pithead baths.</td>
+      <td class="govuk-table__cell">1960</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="#" class="govuk-link--no-visited-state">COAL 80/80/3</a></th>
+      <td class="govuk-table__cell">Bedlington Colliery, Newcastle Upon Tyne. Photograph depicting: view of pithead baths.</td>
+      <td class="govuk-table__cell">1960</td>
+    </tr>
+  </tbody>
+</table>
+
+
+{% endblock %}
