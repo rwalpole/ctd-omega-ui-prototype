@@ -15,4 +15,14 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/related-items";
 @import "patterns/task-list";
 
+// TNA Frontend Design Toolkit styles
+//@import "variables";
+//@import "color";
+//@import "header";
+
+
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.govuk-width-container {
+  max-width: 1020px;
+}
