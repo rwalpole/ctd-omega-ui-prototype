@@ -17,7 +17,7 @@
   </p>
   </div>
   -->
-  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+  <!-- <a class="govuk-back-link" href="javascript:window.history.back()">Back</a> -->
 {% endblock %}
 
 {% block content %}
@@ -25,7 +25,6 @@
 <form class="form" action="/login-post" method="post">
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-quarter">&nbsp;</div>
   <div class="govuk-grid-column-one-half">
     <h1 class="govuk-heading-m">Sign in: Pan-Archival Catalogue</h1>
     <div class="govuk-form-group">
@@ -36,9 +35,13 @@
       <label class="govuk-label" for="password">Password</label>
       <input class="govuk-input" id="password" name="password" type="text">
     </div>
-    <button class="govuk-button" data-module="govuk-button">Submit</button>
+    <button class="govuk-button" data-module="govuk-button">Sign In</button>
   </div>
+<!--
   <div class="govuk-grid-column-one-quarter">&nbsp;</div>
+
+  <div class="govuk-grid-column-one-quarter">&nbsp;</div>
+-->
 </div>
 </form>
 

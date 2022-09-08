@@ -22,12 +22,18 @@
 
 {% block content %}
 
+<div class="govuk-panel govuk-panel--confirmation">
+  <div class="govuk-panel__body">
+    Your changes have been saved.
+  </div>
+</div>
+
 <h1 class="govuk-heading-l">TNA reference: COAL 80/80/1</h1>
 <h2 class="govuk-heading-m">PAC-ID: COAL.2022.V5RJW.P Physical Record</h2>
 <p class="govuk-body">Series: National Coal Board and predecessors: Photographs</p>
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-<form class="form" action="/edit-record-updated" method="post">
+<form class="form" action="/saved" method="post">
 
 <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
