@@ -3,18 +3,15 @@ const router = express.Router()
 
 // Add your routes here - above the module.exports line
 // Run this code when a form is submitted to 'juggling-balls-answer'
-router.post('/juggling-balls-answer', function (req, res) {
+router.post('/edit-record-action', function (req, res) {
 
   // Make a variable and give it the value from 'how-many-balls'
-  var howManyBalls = req.session.data['how-many-balls']
+  var action = req.body.action;
 
-  // Check whether the variable matches a condition
-  if (howManyBalls == "3 or more"){
-    // Send user to next page
-    res.redirect('/juggling-trick')
+  if(action == 'save'){
+    res.redirect('/edit-record-updated')
   } else {
-    // Send user to ineligible page
-    res.redirect('/ineligible')
+    res.redirect('/edit-set')
   }
 
 })
