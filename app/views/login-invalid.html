@@ -21,6 +21,17 @@
 
 {% block content %}
 
+<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>Username and/or password is incorrect.</li>
+    </ul>
+  </div>
+</div>
+
 <form class="form" action="/edit-set" method="post">
 
 <div class="govuk-grid-row">
@@ -31,7 +42,7 @@
         <span class="govuk-visually-hidden">Error:</span> Enter a username
       </p>
       <label class="govuk-label" for="event-name">Username</label>
-      <input class="govuk-input govuk-input--error" id="username" name="username" type="text">
+      <input class="govuk-input govuk-input--error" id="username" name="username" type="text" autofocus="autofocus"/>
     </div>
     <div class="govuk-form-group govuk-form-group--error">
       <p id="username-error" class="govuk-error-message">
