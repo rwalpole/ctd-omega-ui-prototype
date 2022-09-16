@@ -46,13 +46,19 @@
     <h3 class="govuk-fieldset__heading">Intellectual properties</h3>
   </legend>
 
-  <div class="govuk-form-group">
+  <div class="govuk-form-group govuk-form-group--error">
     <label class="govuk-label" for="more-detail">Scope and content</label>
-    <textarea class="govuk-textarea" id="scope-content" name="scope-content" rows="5">Bedlington Colliery, Newcastle Upon Tyne. Photograph depicting: view of pithead baths.</textarea>
+    <p id="national-insurance-number-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span>Scope and content too long, maximum length 8000 characeters
+    </p>
+    <textarea class="govuk-textarea" id="scope-content" name="scope-content" rows="5" autofocus="autofocus">Bedlington Colliery, Newcastle Upon Tyne. Photograph depicting: view of pithead baths.</textarea>
   </div>
 
-  <div class="govuk-form-group">
+  <div class="govuk-form-group govuk-form-group--error">
     <label class="govuk-label" for="former-reference">Former reference - Department (optional)</label>
+    <p id="national-insurance-number-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span>Former reference - Department too long, maximum length 255 characeters
+    </p>
     <input class="govuk-input govuk-input--width-20" id="former-reference" name="former-reference" type="text" autocomplete="address-line2">
   </div>
 
